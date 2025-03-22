@@ -1,49 +1,75 @@
 @font-face {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
-  src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff') format('woff');
+  src: local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff")
+      format("woff");
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: local('Inter'), url('https://fonts.cdnfonts.com/s/19795/Inter[slnt,wght].woff') format('woff');
+  src: local("Inter"),
+    url("https://fonts.cdnfonts.com/s/19795/Inter[slnt,wght].woff")
+      format("woff");
 }
 
-:root{
+:root {
   --black: #1e1e1e;
   --m: 4rem;
 }
 
 * {
   background-color: var(--black);
-  font-family: 'Inter', 'SF Pro Display';
+  font-family: "Inter", "SF Pro Display";
   scroll-behavior: smooth;
 }
-html, body {
+html,
+body {
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
   animation: stopscroll 6s forwards;
 }
 
-html::-webkit-scrollbar, body::-webkit-scrollbar {
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
   display: none;
 }
 
+#google_translate_element {
+  width: 300px;
+  float: right;
+  text-align: right;
+  display: block;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+#goog-gt-tt {
+  display: none !important;
+  top: 0px !important;
+}
+.goog-tooltip skiptranslate {
+  display: none !important;
+  top: 0px !important;
+}
+.activity-root {
+  display: none !important;
+}
+.status-message {
+  display: none !important;
+}
+.started-activity-container {
+  display: none !important;
+}
 
-#google_translate_element{width:300px;float:right;text-align:right;display:block}
-.goog-te-banner-frame.skiptranslate { display: none !important;} 
-body { top: 0px !important; }
-#goog-gt-tt{display: none !important; top: 0px !important; } 
-.goog-tooltip skiptranslate{display: none !important; top: 0px !important; } 
-.activity-root { display: hide !important;} 
-.status-message { display: hide !important;}
-.started-activity-container { display: hide !important;}
-
-.dissapear{
+.dissapear {
   pointer-events: none;
   user-select: none;
   animation: fade-out 5s forwards;
@@ -79,7 +105,6 @@ body { top: 0px !important; }
   overflow: hidden;
 }
 
-
 .pic {
   position: absolute;
   top: 10px;
@@ -94,15 +119,15 @@ body { top: 0px !important; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   display: block;
   margin: 0;
   padding: 0;
 }
-.namenstuf{
+.namenstuf {
   overflow: hidden;
 }
-.name{
+.name {
   display: flex;
   color: white;
   position: absolute;
@@ -111,9 +136,8 @@ body { top: 0px !important; }
   left: 245px;
   top: 30px;
   font-size: var(--m);
-
 }
-.location a{
+.location a {
   display: flex;
   color: rgb(176, 176, 176);
   position: absolute;
@@ -126,7 +150,7 @@ body { top: 0px !important; }
   text-decoration: none;
 }
 
-.bio{
+.bio {
   display: flex;
   color: white;
   position: absolute;
@@ -134,27 +158,26 @@ body { top: 0px !important; }
   margin: 0;
   left: 245px;
   top: 150px;
-  font-size: calc(var(--m)/2/1.5);
+  font-size: calc(var(--m) / 2 / 1.5);
   width: 65vh;
 }
 
-
 @keyframes fade-in-out {
   0% {
-      opacity: 0;
-      overflow: hidden;
+    opacity: 0;
+    overflow: hidden;
   }
   20% {
-      opacity: 1;
+    opacity: 1;
   }
   60% {
-      opacity: 1;
+    opacity: 1;
   }
   100% {
-      opacity: 0;
-      display: none;
-      user-select: none;
-      pointer-events: none;
+    opacity: 0;
+    display: none;
+    user-select: none;
+    pointer-events: none;
   }
 }
 @keyframes fade-out {
@@ -171,31 +194,31 @@ body { top: 0px !important; }
   0% {
     overflow: hidden;
   }
-  10%{
+  10% {
     overflow: hidden;
   }
-  20%{
+  20% {
     overflow: hidden;
   }
-  30%{
+  30% {
     overflow: hidden;
   }
-  40%{
+  40% {
     overflow: hidden;
-  }                             /* Just don't ask. If it works, it works */
-  50%{
-    overflow: hidden;
-  }
-  60%{
+  } /* Just don't ask. If it works, it works */
+  50% {
     overflow: hidden;
   }
-  70%{
+  60% {
     overflow: hidden;
   }
-  80%{
+  70% {
     overflow: hidden;
   }
-  90%{
+  80% {
+    overflow: hidden;
+  }
+  90% {
     overflow: hidden;
   }
   100% {
