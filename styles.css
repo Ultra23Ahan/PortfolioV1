@@ -51,6 +51,7 @@ body::-webkit-scrollbar {
   place-items: center;
   height: 100vh;
   width: 100vw;
+  animation: fade-in-out 5s forwards;
 }
 
 .hithere {
@@ -147,16 +148,15 @@ body::-webkit-scrollbar {
   100% {
     opacity: 0;
     display: none;
-    user-select: none;
-    pointer-events: none;
+    background: transparent;
   }
 }
 @keyframes collapse-space {
   from {
     margin-top: 100vh;
-    height: 100vh;
   }
   to {
+    display: none;
     margin-top: 0;
     height: 0;
   }
