@@ -12,6 +12,7 @@
   --yellow: #f1c02d;
   --violet: #8554fd;
   --cyan: #80e7fa;
+  --opacity: 0.5;
 }
 @font-face {
   font-family: "SF Pro Display";
@@ -116,13 +117,15 @@ body::-webkit-scrollbar {
   margin: 0;
   color: var(--green);
 }
-.techk, .techl{
+.techk,
+.techl {
   color: var(--white);
   font-size: calc(0.65 * var(--m));
   font-weight: 600;
   padding-left: calc(3 * var(--m));
 }
-.techkcontainer, .techlcontainer{
+.techkcontainer,
+.techlcontainer {
   display: flex;
   align-items: center;
   padding-left: calc(3 * var(--m));
@@ -130,7 +133,13 @@ body::-webkit-scrollbar {
   height: fit-content;
   gap: calc(0.5 * var(--m));
 }
-.card {
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7 {
   width: 286px;
   height: 55px;
   display: flex;
@@ -139,25 +148,49 @@ body::-webkit-scrollbar {
   gap: 20px;
   padding: 10px;
   border-radius: 12px;
-  border: 1px solid #fafafa;
-  background-color: #fafafa;
-  transition: background-color 200ms, border-color 200ms;
-}
-
-
-.card {
+  border: 1px solid #2a2a2a;
   background-color: #1f1f1f;
-  border-color: #2a2a2a;
+  transition: background-color 200ms, border-color 200ms;
+  cursor: default;
+  user-select: none;
 }
 
-.card:hover {
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover,
+.card7:hover {
   border-color: #3e3e3e;
   background-color: #2a2a2a;
+}
+.card1 .logo-container {
+  background-color: rgba(233, 87, 43, var(--opacity));
+}
+.card2 .logo-container {
+  background-color: rgb(73, 148, 236, var(--opacity));
+}
+.card3 .logo-container,
+.card5 .logo-container {
+  background-color: rgb(249, 223, 75, var(--opacity));
+}
+.card4 .logo-container {
+  background: linear-gradient(
+    to bottom right,
+    rgb(76, 120, 166, var(--opacity)) 25%,
+    rgb(250, 223, 110, var(--opacity))
+  );
+}
+.card6 .logo-container {
+  background-color: rgb(68, 118, 192, var(--opacity));
+}
+.card7 .logo-container {
+  background-color: rgb(108, 204, 147, var(--opacity));
 }
 
 .logo-container {
   padding: 12px;
-  background-color: rgba(49, 120, 198, 0.2);
   border-radius: 8px;
   width: fit-content;
 }
