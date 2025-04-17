@@ -1,3 +1,18 @@
+:root {
+  --m: 4rem;
+  --red: #e6505b;
+  --pink: #ef82c1;
+  --blue: #0080ff;
+  --green: #65fb32;
+  --white: #f1f1f1;
+  --black: #1e1e1e;
+  --blacker: #131313;
+  --grey: #868686;
+  --orange: #e48837;
+  --yellow: #f1c02d;
+  --violet: #8554fd;
+  --cyan: #80e7fa;
+}
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
@@ -16,10 +31,6 @@
       format("woff");
 }
 
-:root {
-  --black: #1e1e1e;
-  --m: 4rem;
-}
 
 * {
   font-family: "Inter", "SF Pro Display";
@@ -27,16 +38,23 @@
 }
 html,
 body {
-  background-color: var(--black);
+  background-color: var(--blacker);
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
-  animation: stopscroll 6s forwards;
+  animation: stopscroll 1s forwards;  /*TODO: make it 6s*/
 }
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
+}
+.no-underline {
+  text-decoration: none;
+  color: var(--pink);
+}
+.blue{
+  color: var(--blue);
 }
 
 .dissapear {
@@ -44,96 +62,113 @@ body::-webkit-scrollbar {
   user-select: none;
   height: 100vh;
   margin-top: 100vh;
-  animation: collapse-space 5s forwards;
+  animation: collapse-space 1s forwards; /* TODO: make it 5s*/
 }
 .hicontainer {
   display: grid;
   place-items: center;
   height: 100vh;
   width: 100vw;
-  animation: fade-in-out 5s forwards;
+  animation: fade-in-out 1s forwards;
 }
 
 .hithere {
   color: white;
   place-self: center;
-  font-size: 96px;
+  font-size: calc(1.5 * var(--m));
   animation: fade-in-out 5s forwards;
 }
-
-.arrow {
-  padding-left: 48%;
-  padding-top: 19.4%;
-  animation: bounce 1s linear infinite;
-  position: absolute;
-  display: none;
-}
-
-.cestmoi {
-  position: relative;
-  place-self: center;
-  width: 95%;
-  height: 90vh;
-  overflow: hidden;
-}
-
-.pic {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: var(--m); /* Rounded square */
-}
-
-.pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: rgba(0, 0, 0, 0);
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.namenstuf {
-  overflow: hidden;
+.introcontainer {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 .name {
+  place-self: center;
+  line-height: 1;
+  font-weight: 600;
   display: flex;
-  color: white;
-  position: absolute;
-  background: transparent;
-  margin: 0;
-  left: 245px;
-  top: 30px;
-  font-size: var(--m);
+  color: var(--white);
+  font-size: calc(1.5 * var(--m));
 }
-.location a {
-  display: flex;
-  color: rgb(176, 176, 176);
-  position: absolute;
-  background: transparent;
-  margin: 0;
-  left: 245px;
-  top: 110px;
-  font-size: 18px;
-  margin: 0;
-  text-decoration: none;
+.frontend {
+  color: var(--white);
+  font-size: calc(0.295 * var(--m));
+  margin-bottom: 20px;
 }
-
-.bio {
+.bio{
   display: flex;
-  color: white;
-  position: absolute;
-  background: transparent;
-  margin: 0;
-  left: 245px;
-  top: 150px;
+  justify-content: space-between;
+  align-items: flex-start;
   font-size: calc(var(--m) / 2 / 1.5);
-  width: 65vh;
+  width: 35vw;
+  margin-top: 2.5px;
+}
+.bioleft {
+  color: var(--white);
+  font-size: calc(0.295 * var(--m));
+  margin: 0;
+
+}
+.bioright{
+  color: var(--white);
+  font-size: calc(0.295 * var(--m));
+  margin: 0;
+  color: var(--green);
+}
+.tech{
+  color: var(--white);
+  font-size: calc(0.7 * var(--m));
+  font-weight: 600;
+  padding-left: calc(var(--m));
+}
+.card {
+  width: 300px;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #fafafa;
+  background-color: #fafafa;
+  transition: background-color 200ms, border-color 200ms;
 }
 
+.card {
+  background-color: #1f1f1f;
+  border-color: #2a2a2a;
+}
+
+.card:hover {
+  border-color: #3e3e3e;
+  background-color: #2a2a2a;
+}
+
+.logo-container {
+  padding: 12px;
+  background-color: rgba(49, 120, 198, 0.2);
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  user-select: none;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+}
+.subtitle {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+/**********************************************************************************************************************************/
 @keyframes fade-in-out {
   0% {
     opacity: 0;
