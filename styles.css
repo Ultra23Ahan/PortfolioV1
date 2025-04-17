@@ -215,25 +215,53 @@ body::-webkit-scrollbar {
   color: var(--white); /*rgba(255, 255, 255, 0.7)*/
   margin: 0;
 }
-.pjscontainer{
+.pjscontainer {
   display: flex;
   padding-left: calc(3 * var(--m));
   width: calc(20.95 * var(--m));
   height: 100vh;
 }
-.pj{
+.pj {
   width: calc(7 * var(--m));
   height: calc(9 * var(--m));
   background-color: #1f1f1f;
   color: var(--white);
   border: 4px solid var(--white);
   border-radius: 10px !important;
-  padding: calc(0.5 * var(--m));
+  padding-left: calc(0.35 * var(--m));
+  padding-right: calc(0.35 * var(--m));
 }
-.pjtitle{
-  font-size: calc(0.65 * var(--m));
+.pjtitle {
+  font-size: calc(0.5 * var(--m));
   font-weight: 600;
   color: var(--white);
+}
+.pjimg {
+  padding-top: calc(0.5 * var(--m));
+  width: calc(7 * var(--m));
+  height: calc(4 * var(--m));
+  border-radius: 5px;
+}
+.pjgitcontainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: #3e3e3e 3px solid;
+  width: calc(1 * var(--m));
+  height: calc(1 * var(--m));
+  border-radius: 12px;
+  background: #3e3e3e;
+  box-shadow: inset 11px 11px 28px #2b2b2b, inset -11px -11px 28px #515151;
+}
+.pjgitcontainer:hover {
+  border-radius: 12px;
+  background: #3e3e3e;
+  box-shadow: 5px 5px 10px #2b2b2b, -5px -5px 10px #515151;
+}
+
+.pjgit {
+  width: calc(1 * var(--m));
+  height: calc(1 * var(--m));
 }
 /**********************************************************************************************************************************/
 @keyframes fade-in-out {
