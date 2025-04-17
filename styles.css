@@ -218,16 +218,22 @@ body::-webkit-scrollbar {
 .pjscontainer{
   display: flex;
   padding-left: calc(3 * var(--m));
-  width: calc(fit-content + var(--m));
+  width: calc(20.95 * var(--m));
   height: 100vh;
 }
 .pj{
   width: calc(7 * var(--m));
-  height: calc(10 * var(--m));
+  height: calc(9 * var(--m));
   background-color: #1f1f1f;
   color: var(--white);
-  border: var(--white) 4px solid;
-  padding: calc(0.6 * var(--m));
+  border: 4px solid var(--white);
+  border-radius: 10px !important;
+  padding: calc(0.5 * var(--m));
+}
+.pjtitle{
+  font-size: calc(0.65 * var(--m));
+  font-weight: 600;
+  color: var(--white);
 }
 /**********************************************************************************************************************************/
 @keyframes fade-in-out {
