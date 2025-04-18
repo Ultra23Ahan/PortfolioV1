@@ -37,6 +37,7 @@
   font-family: "Inter", "SF Pro Display";
   scroll-behavior: smooth;
   overflow-x: hidden;
+  flex-wrap: wrap;
 }
 html,
 body {
@@ -226,7 +227,8 @@ body::-webkit-scrollbar {
   padding: calc(0.188 * var(--m));
   border-radius: calc(0.125 * var(--m));
   width: calc(0.5 * var(--m));
-  height: calc(0.5 * var(--m));}
+  height: calc(0.5 * var(--m));
+}
 
 .logo {
   overflow-x: hidden;
@@ -239,14 +241,14 @@ body::-webkit-scrollbar {
 .title {
   overflow-x: hidden;
   color: var(--white);
-  font-size: 1.125rem;
+  font-size: calc(0.281 * var(--m));
   font-weight: 500;
   margin: 0;
 }
 
 .subtitle {
   overflow-x: hidden;
-  font-size: 0.875rem;
+  font-size: calc(0.219 * var(--m));
   color: var(--white); /*rgba(255, 255, 255, 0.7)*/
   margin: 0;
 }
@@ -493,4 +495,3 @@ body::-webkit-scrollbar {
     --m: 3rem;
   }
 }
-
