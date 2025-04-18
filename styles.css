@@ -302,7 +302,6 @@ body::-webkit-scrollbar {
   margin-top: 25px;
 }
 .techstack {
-  border: #54fd76 solid 3px;
   width: calc(2 * var(--m));
   background-color: #1f1f1f;
   line-height: 1;
@@ -352,12 +351,26 @@ body::-webkit-scrollbar {
   justify-self: right;
   width: calc(2 * var(--m));
 }
-.social {
-  border-color: rgb(0, 255, 81) solid 3px;
+.gitsocial, .discsocial {
+  border: #525252 solid 3px;
+  border-radius: 10px;
+  background-color: #525252;
   width: calc(0.75 * var(--m));
   height: calc(0.75 * var(--m));
   user-select: none;
 }
+/*  border: #868686 solid 2px;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 10px;
+  transition: background-color 200ms, border-color 200ms;
+  cursor: default;
+  user-select: none;
+}
+.techstack:hover {
+  border-color: #525252;
+  background-color: #3e3e3e;
+}*/
 /**********************************************************************************************************************************/
 @keyframes fade-in-out {
   0% {
