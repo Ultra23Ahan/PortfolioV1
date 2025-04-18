@@ -267,8 +267,9 @@ body::-webkit-scrollbar {
 }
 .pjgitcontainer:hover,
 .pjlinkcontainer:hover {
-  border-radius: 12px;
-  background: #3e3e3e;
+  border-color: #525252;
+  background-color: #3e3e3e;
+  transition: background-color 200ms, border-color 200ms;
 }
 .pjgit,
 .pjlink {
@@ -286,7 +287,7 @@ body::-webkit-scrollbar {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.pjinfocontainer{
+.pjinfocontainer {
   display: flex;
   /* border: #0022ff solid 3px; */
   justify-content: space-between;
@@ -298,20 +299,39 @@ body::-webkit-scrollbar {
   display: flex;
   gap: calc(0.05 * var(--m));
   width: calc(2 * var(--m));
-  /* border: #fd5454 solid 3px; */
   margin-top: 25px;
 }
-.techstack{
+.techstack {
   border: #54fd76 solid 3px;
   width: calc(2 * var(--m));
-  background-color: #3e3e3e;
+  background-color: #1f1f1f;
   line-height: 1;
   font-size: calc(0.2345 * var(--m));
-  border:#868686 solid 2px;
+  border: #868686 solid 2px;
   border-radius: 10px;
   height: fit-content;
   padding: 10px;
-
+  transition: background-color 200ms, border-color 200ms;
+  cursor: default;
+  user-select: none;
+}
+.techstack:hover {
+  border-color: #525252;
+  background-color: #3e3e3e;
+}
+.footer {
+  display: flex;
+  height: 25vh;
+  padding: 20px;
+  color: var(--white);
+  border: #0022ff solid 3px;
+}
+.collab {
+  border-color: rgb(0, 234, 255) solid 3px;
+  padding: 20px;
+}
+.madeby{
+  
 }
 /**********************************************************************************************************************************/
 @keyframes fade-in-out {
