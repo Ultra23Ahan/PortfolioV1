@@ -201,6 +201,7 @@ body::-webkit-scrollbar {
   width: 32px;
   height: 32px;
   user-select: none;
+  border-radius: 3px;
 }
 
 .title {
