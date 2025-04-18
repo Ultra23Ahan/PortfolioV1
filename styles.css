@@ -53,6 +53,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: var(--pink);
 }
+
 .blue {
   color: var(--blue);
 }
@@ -223,6 +224,8 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 .pj {
+  display: flex;
+  flex-direction: column;
   width: calc(7 * var(--m));
   height: calc(9 * var(--m));
   background-color: #1f1f1f;
@@ -236,12 +239,19 @@ body::-webkit-scrollbar {
   font-size: calc(0.5 * var(--m));
   font-weight: 600;
   color: var(--white);
+  margin-bottom: calc(0.25 * var(--m));
+}
+.pjdesc {
+  font-size: calc((var(--m) / 2) / 2);
+  color: var(--white);
+  margin: 0;
 }
 .pjimg {
   padding-top: calc(0.5 * var(--m));
   width: calc(7 * var(--m));
   height: calc(4 * var(--m));
   border-radius: 5px;
+  user-select: none;
 }
 .pjgitcontainer,
 .pjlinkcontainer {
@@ -252,6 +262,7 @@ body::-webkit-scrollbar {
   width: calc(0.5 * var(--m));
   height: calc(0.5 * var(--m));
   border-radius: 12px;
+  user-select: none;
 }
 .pjgitcontainer:hover,
 .pjlinkcontainer:hover {
@@ -262,13 +273,17 @@ body::-webkit-scrollbar {
 .pjlink {
   width: calc(0.5 * var(--m));
   height: calc(0.5 * var(--m));
+  user-select: none;
 }
 .pjiconscontainer {
   display: flex;
   justify-content: space-between;
-  /* border: #8554fd solid 3px; */
+  border: #8554fd solid 3px;
   width: calc(2 * var(--m));
   margin-top: calc(0.5 * var(--m));
+  user-select: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /**********************************************************************************************************************************/
