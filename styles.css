@@ -150,7 +150,7 @@ body::-webkit-scrollbar {
   gap: 20px;
   padding: 10px;
   border-radius: 12px;
-  border: 1px solid #2a2a2a;
+  border: 2px solid #2a2a2a;
   background-color: #1f1f1f;
   transition: background-color 200ms, border-color 200ms;
   cursor: default;
@@ -253,6 +253,7 @@ body::-webkit-scrollbar {
   border-radius: 5px;
   user-select: none;
 }
+
 .pjgitcontainer,
 .pjlinkcontainer {
   display: flex;
@@ -278,14 +279,40 @@ body::-webkit-scrollbar {
 .pjiconscontainer {
   display: flex;
   justify-content: space-between;
-  border: #8554fd solid 3px;
+  /* border: #8554fd solid 3px; */
   width: calc(2 * var(--m));
   margin-top: calc(0.5 * var(--m));
   user-select: none;
   padding-bottom: 0;
   margin-bottom: 0;
 }
+.pjinfocontainer{
+  display: flex;
+  /* border: #0022ff solid 3px; */
+  justify-content: space-between;
+  padding-bottom: 0;
+  margin-top: calc(0.16525 * var(--m));
+  width: calc(5 * var(--m));
+}
+.techstackcontainer {
+  display: flex;
+  gap: calc(0.05 * var(--m));
+  width: calc(2 * var(--m));
+  /* border: #fd5454 solid 3px; */
+  margin-top: 25px;
+}
+.techstack{
+  border: #54fd76 solid 3px;
+  width: calc(2 * var(--m));
+  background-color: #3e3e3e;
+  line-height: 1;
+  font-size: calc(0.2345 * var(--m));
+  border:#868686 solid 2px;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 10px;
 
+}
 /**********************************************************************************************************************************/
 @keyframes fade-in-out {
   0% {
