@@ -14,8 +14,24 @@
   --cyan: #80e7fa;
   --opacity: 0.3;
 }
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local("SF Pro Display"),
+    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Inter"),
+    url("https://fonts.cdnfonts.com/s/19795/Inter[slnt,wght].woff")
+      format("woff");
+}
+/*****************************************************************************************************************************/
 
 * {
   font-family: "Inter", "SF Pro Display";
@@ -34,6 +50,7 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
+/*****************************************************************************************************************************/
 .no-underline {
   text-decoration: none;
   color: var(--pink);
@@ -42,7 +59,7 @@ body::-webkit-scrollbar {
 .blue {
   color: var(--blue);
 }
-
+/*****************************************************************************************************************************/
 .dissapear {
   pointer-events: none;
   user-select: none;
@@ -50,6 +67,7 @@ body::-webkit-scrollbar {
   margin-top: 100vh;
   animation: collapse-space 1s forwards; /* TODO: make it 5s*/
 }
+/*****************************************************************************************************************************/
 .hicontainer {
   display: grid;
   place-items: center;
@@ -64,6 +82,7 @@ body::-webkit-scrollbar {
   font-size: calc(1.5 * var(--m));
   animation: fade-in-out 5s forwards;
 }
+/*****************************************************************************************************************************/
 .introcontainer {
   display: grid;
   place-items: center;
@@ -103,6 +122,7 @@ body::-webkit-scrollbar {
   margin: 0;
   color: var(--green);
 }
+/*****************************************************************************************************************************/
 .techk,
 .techl,
 .projects {
@@ -202,6 +222,7 @@ body::-webkit-scrollbar {
   color: var(--white); /*rgba(255, 255, 255, 0.7)*/
   margin: 0;
 }
+/*****************************************************************************************************************************/
 .pjscontainer {
   display: flex;
   padding-left: calc(3 * var(--m));
@@ -249,12 +270,13 @@ body::-webkit-scrollbar {
   height: calc(0.5 * var(--m));
   border-radius: 12px;
   user-select: none;
+  transition: background-color 200ms, border-color 200ms;
 }
 .pjgitcontainer:hover,
 .pjlinkcontainer:hover {
   border-color: #525252;
   background-color: #3e3e3e;
-  transition: background-color 200ms, border-color 200ms;
+
 }
 .pjgit,
 .pjlink {
@@ -280,6 +302,7 @@ body::-webkit-scrollbar {
   margin-top: calc(0.16525 * var(--m));
   width: calc(5 * var(--m));
 }
+
 .techstackcontainer {
   display: flex;
   gap: calc(0.05 * var(--m));
@@ -303,6 +326,7 @@ body::-webkit-scrollbar {
   border-color: #525252;
   background-color: #3e3e3e;
 }
+/*****************************************************************************************************************************/
 .footer {
   display: flex;
   flex-direction: column;
