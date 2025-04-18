@@ -14,23 +14,8 @@
   --cyan: #80e7fa;
   --opacity: 0.3;
 }
-@font-face {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  src: local("SF Pro Display"),
-    url("https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff")
-      format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Inter"),
-    url("https://fonts.cdnfonts.com/s/19795/Inter[slnt,wght].woff")
-      format("woff");
-}
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
   font-family: "Inter", "SF Pro Display";
@@ -342,35 +327,38 @@ body::-webkit-scrollbar {
 .madeby {
   align-self: center;
   margin-bottom: 0;
-  margin-top: var(--m);
+  margin-top: calc(1.5 *var(--m));
+  font-size: calc(0.3125 * var(--m));
 }
 .socialscontainer {
-  border: #008cff solid 3px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   justify-self: right;
   width: calc(2 * var(--m));
 }
-.gitsocial, .discsocial {
-  border: #525252 solid 3px;
+.gitsocialcontainer,
+.discsocialcontainer {
+  border: #868686 solid 2px;
   border-radius: 10px;
-  background-color: #525252;
-  width: calc(0.75 * var(--m));
-  height: calc(0.75 * var(--m));
-  user-select: none;
-}
-/*  border: #868686 solid 2px;
-  border-radius: 10px;
+  width: fit-content;
   height: fit-content;
   padding: 10px;
-  transition: background-color 200ms, border-color 200ms;
-  cursor: default;
   user-select: none;
+  transition: background-color 200ms, border-color 200ms;
 }
-.techstack:hover {
+.gitsocialcontainer:hover,
+.discsocialcontainer:hover {
   border-color: #525252;
   background-color: #3e3e3e;
-}*/
+}
+.gitsocial,
+.discsocial {
+  padding: 2.5px;
+  width: calc(0.5 * var(--m));
+  height: calc(0.5 * var(--m));
+}
+
 /**********************************************************************************************************************************/
 @keyframes fade-in-out {
   0% {
