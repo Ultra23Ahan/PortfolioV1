@@ -336,10 +336,27 @@ body::-webkit-scrollbar {
   padding: 10px;
   margin: 0;
 }
+.infocontainer {
+  display: flex;
+  justify-content: space-between;
+}
 .madeby {
   align-self: center;
   margin-bottom: 0;
   margin-top: var(--m);
+}
+.socialscontainer {
+  border: #008cff solid 3px;
+  display: flex;
+  justify-content: space-between;
+  justify-self: right;
+  width: calc(2 * var(--m));
+}
+.social {
+  border-color: rgb(0, 255, 81) solid 3px;
+  width: calc(0.75 * var(--m));
+  height: calc(0.75 * var(--m));
+  user-select: none;
 }
 /**********************************************************************************************************************************/
 @keyframes fade-in-out {
