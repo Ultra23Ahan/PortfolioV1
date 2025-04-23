@@ -171,13 +171,7 @@ body::-webkit-scrollbar {
   gap: calc(0.5 * var(--m));
   overflow-x: hidden;
 }
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6,
-.card7 {
+.card {
   overflow-x: hidden;
   width: calc(4.469 * var(--m));
   display: flex;
@@ -195,13 +189,7 @@ body::-webkit-scrollbar {
   user-select: none;
 }
 
-.card1:hover,
-.card2:hover,
-.card3:hover,
-.card4:hover,
-.card5:hover,
-.card6:hover,
-.card7:hover {
+.card:hover {
   border-color: #3e3e3e;
   background-color: #2a2a2a;
 }
@@ -212,10 +200,10 @@ body::-webkit-scrollbar {
   background-color: rgb(73, 148, 236, var(--opacity));
 }
 .card3 .logo-container,
-.card5 .logo-container {
+.card6 .logo-container {
   background-color: rgb(249, 223, 75, var(--opacity));
 }
-.card4 .logo-container {
+.card5 .logo-container {
   background: linear-gradient(
     to bottom right,
     rgb(76, 120, 166, var(--opacity)) 25%,
