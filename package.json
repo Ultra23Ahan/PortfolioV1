@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss styles.css -o ./dist/temp.css && npx purgecss --config purgecss.config.js --output ./dist && cat ./dist/temp.css > styles.css && rm ./dist/temp.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ultra23Ahan/PortfolioV1.git"
+  },
+  "author": "ahan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ultra23Ahan/PortfolioV1/issues"
+  },
+  "homepage": "https://github.com/Ultra23Ahan/PortfolioV1#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "purgecss": "^7.0.2"
+  }
+}

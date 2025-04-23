@@ -67,7 +67,9 @@ body::-webkit-scrollbar {
 .dissapear {
   overflow-x: hidden;
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   height: 100vh;
   margin-top: 100vh;
   animation: collapse-space 1s forwards; /* TODO: make it 5s*/
@@ -153,6 +155,7 @@ body::-webkit-scrollbar {
   font-size: calc(0.65 * var(--m));
   font-weight: 600;
   padding-left: calc(3 * var(--m));
+  width: -moz-fit-content;
   width: fit-content;
   overflow-x: hidden;
 }
@@ -161,7 +164,9 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   padding-left: calc(3 * var(--m));
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   gap: calc(0.5 * var(--m));
   overflow-x: hidden;
@@ -185,7 +190,9 @@ body::-webkit-scrollbar {
   background-color: #1f1f1f;
   transition: background-color 200ms, border-color 200ms;
   cursor: default;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .card1:hover,
@@ -234,7 +241,9 @@ body::-webkit-scrollbar {
   overflow-x: hidden;
   width: calc(0.5 * var(--m));
   height: calc(0.5 * var(--m));
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   border-radius: calc(0.047 * var(--m));
 }
 
@@ -259,6 +268,7 @@ body::-webkit-scrollbar {
   padding-left: calc(3 * var(--m));
   width: calc(20.95 * var(--m));
   height: 100vh;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .pj {
@@ -293,7 +303,9 @@ body::-webkit-scrollbar {
   width: calc(7 * var(--m));
   height: calc(4 * var(--m));
   border-radius: calc(0.078 * var(--m));
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .pjgitcontainer,
@@ -306,7 +318,9 @@ body::-webkit-scrollbar {
   width: calc(0.5 * var(--m));
   height: calc(0.5 * var(--m));
   border-radius: calc(0.188 * var(--m));
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: background-color 200ms, border-color 200ms;
 }
 .pjgitcontainer:hover,
@@ -319,7 +333,9 @@ body::-webkit-scrollbar {
   overflow-x: hidden;
   width: calc(0.5 * var(--m));
   height: calc(0.5 * var(--m));
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .pjiconscontainer {
   overflow-x: hidden;
@@ -328,7 +344,9 @@ body::-webkit-scrollbar {
 
   width: calc(2 * var(--m));
   margin-top: calc(0.5 * var(--m));
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -345,21 +363,26 @@ body::-webkit-scrollbar {
 .techstackcontainer {
   display: flex;
   gap: calc(0.05 * var(--m));
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: calc(0.391 * var(--m));
 }
 .techstack {
+  width: -moz-fit-content;
   width: fit-content;
   background-color: #1f1f1f;
   line-height: 1;
   font-size: calc(0.2345 * var(--m));
   border: #868686 solid calc(0.031 * var(--m));
   border-radius: calc(0.156 * var(--m));
+  height: -moz-fit-content;
   height: fit-content;
   padding: calc(0.156 * var(--m));
   transition: background-color 200ms, border-color 200ms;
   cursor: default;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .techstack:hover {
   border-color: #525252;
@@ -403,10 +426,14 @@ body::-webkit-scrollbar {
 .discsocialcontainer {
   border: #868686 solid calc(0.031 * var(--m));
   border-radius: calc(0.156 * var(--m));
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: calc(0.156 * var(--m));
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: background-color 200ms, border-color 200ms;
 }
 .gitsocialcontainer:hover,
@@ -493,5 +520,30 @@ body::-webkit-scrollbar {
 @media (max-width: 1670px) {
   :root {
     --m: 3rem;
+  }
+}
+@media (max-width: 385px) {
+  :root {
+    --m: 2rem;
+  }
+}
+@media (max-width: 307px) {
+  :root {
+    --m: 1rem;
+  }
+}
+@media (max-width: 150px) {
+  :root {
+    --m: 0.5rem;
+  }
+}
+@media (min-width: 3840px) {
+  :root {
+    --m: 10rem;
+  }
+}
+@media (min-width: 6100px) {
+  :root {
+    --m: 17.5rem;
   }
 }
