@@ -230,7 +230,7 @@ body::-webkit-scrollbar {
 }
 
 .logo-container {
-  overflow-x: hidden;
+  overflow: hidden;
   padding: calc(0.188 * var(--m));
   border-radius: calc(0.125 * var(--m));
   width: calc(0.5 * var(--m));
