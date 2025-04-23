@@ -45,7 +45,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
-  animation: stopscroll 1s forwards; /*TODO: make it 6s*/
+  animation: stopscroll 3.5s forwards;
 }
 
 html::-webkit-scrollbar,
@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
   user-select: none;
   height: 100vh;
   margin-top: 100vh;
-  animation: collapse-space 1s forwards; /* TODO: make it 5s*/
+  animation: collapse-space 3s forwards;
 }
 /*****************************************************************************************************************************/
 .hicontainer {
@@ -81,7 +81,7 @@ body::-webkit-scrollbar {
   place-items: center;
   height: 100vh;
   width: 100vw;
-  animation: fade-in-out 1s forwards;
+  animation: fade-in-out 3s forwards;
 }
 
 .hithere {
@@ -89,7 +89,7 @@ body::-webkit-scrollbar {
   color: white;
   place-self: center;
   font-size: calc(1.5 * var(--m));
-  animation: fade-in-out 5s forwards;
+  animation: fade-in-out 3s forwards;
 }
 /*****************************************************************************************************************************/
 .introcontainer {
@@ -164,6 +164,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   padding-left: calc(3 * var(--m));
+  padding-right: calc(3 * var(--m));
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
@@ -197,26 +198,34 @@ body::-webkit-scrollbar {
   background-color: rgba(233, 87, 43, var(--opacity));
 }
 .card2 .logo-container {
-  background-color: rgb(73, 148, 236, var(--opacity));
+  background-color: rgba(73, 148, 236, var(--opacity));
 }
 .card3 .logo-container,
 .card6 .logo-container {
-  background-color: rgb(249, 223, 75, var(--opacity));
+  background-color: rgba(249, 223, 75, var(--opacity));
+}
+.card4 .logo-container {
+  background-color: rgba(221, 76, 58, var(--opacity));
 }
 .card5 .logo-container {
   background: linear-gradient(
     to bottom right,
-    rgb(76, 120, 166, var(--opacity)) 25%,
-    rgb(250, 223, 110, var(--opacity))
+    rgba(76, 120, 166, var(--opacity)) 25%,
+    rgba(250, 223, 110, var(--opacity))
   );
 }
-.card6 .logo-container {
-  background-color: rgb(68, 118, 192, var(--opacity));
-}
 .card7 .logo-container {
-  background-color: rgb(108, 204, 147, var(--opacity));
+  background-color: rgba(68, 118, 192, var(--opacity));
 }
-
+.card8 .logo-container {
+  background-color: rgba(108, 204, 147, var(--opacity));
+}
+.card9 .logo-container {
+  background-color: rgba(227, 91, 58, var(--opacity));
+}
+.card10 .logo-container {
+  background-color: rgba(102, 187, 242, var(--opacity));
+}
 .logo-container {
   overflow: hidden;
   padding: calc(0.188 * var(--m));
