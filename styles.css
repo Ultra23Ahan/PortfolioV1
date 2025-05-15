@@ -429,8 +429,8 @@ body::-webkit-scrollbar {
   height: fit-content;
   padding: calc(0.156 * var(--m));
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: background-color 200ms, border-color 200ms;
 }
 .gitsocialcontainer:hover,
