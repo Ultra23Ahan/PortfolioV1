@@ -42,7 +42,6 @@
 html,
 body {
   background-color: var(--blacker);
-  overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
   animation: stopscroll 3.5s forwards;
@@ -65,7 +64,7 @@ body::-webkit-scrollbar {
 }
 /*****************************************************************************************************************************/
 .dissapear {
-  overflow-x: hidden;
+  
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -76,7 +75,7 @@ body::-webkit-scrollbar {
 }
 /*****************************************************************************************************************************/
 .hicontainer {
-  overflow-x: hidden;
+  
   display: grid;
   place-items: center;
   height: 100vh;
@@ -85,7 +84,7 @@ body::-webkit-scrollbar {
 }
 
 .hithere {
-  overflow-x: hidden;
+  
   color: white;
   place-self: center;
   font-size: calc(1.5 * var(--m));
@@ -117,7 +116,7 @@ body::-webkit-scrollbar {
   color: var(--white);
   font-size: calc(0.295 * var(--m));
   margin-bottom: calc(0.312 * var(--m));
-  overflow-x: hidden;
+  
 }
 .bio {
   justify-self: center;
@@ -128,7 +127,7 @@ body::-webkit-scrollbar {
   font-size: calc(var(--m) / 2 / 1.5);
   width: 35vw;
   margin-top: calc(0.039 * var(--m));
-  overflow-x: hidden;
+  
 }
 .bioleft {
   justify-self: center;
@@ -136,7 +135,7 @@ body::-webkit-scrollbar {
   color: var(--white);
   font-size: calc(0.295 * var(--m));
   margin: 0;
-  overflow-x: hidden;
+  
 }
 .bioright {
   justify-self: center;
@@ -145,7 +144,7 @@ body::-webkit-scrollbar {
   font-size: calc(0.295 * var(--m));
   margin: 0;
   color: var(--green);
-  overflow-x: hidden;
+  
 }
 /*****************************************************************************************************************************/
 .techk,
@@ -157,7 +156,7 @@ body::-webkit-scrollbar {
   padding-left: calc(2 * var(--m));
   width: -moz-fit-content;
   width: fit-content;
-  overflow-x: hidden;
+  
 }
 .techkcontainer,
 .techlcontainer {
@@ -170,10 +169,10 @@ body::-webkit-scrollbar {
   height: -moz-fit-content;
   height: fit-content;
   gap: calc(0.5 * var(--m));
-  overflow-x: hidden;
+  
 }
 .card {
-  overflow-x: hidden;
+  
   width: calc(4.469 * var(--m));
   display: flex;
   justify-self: center;
@@ -248,7 +247,7 @@ body::-webkit-scrollbar {
 }
 
 .logo {
-  overflow-x: hidden;
+  
   width: calc(0.5 * var(--m));
   height: calc(0.5 * var(--m));
   -webkit-user-select: none;
@@ -258,7 +257,7 @@ body::-webkit-scrollbar {
 }
 
 .title {
-  overflow-x: hidden;
+  
   color: var(--white);
   font-size: calc(0.281 * var(--m));
   font-weight: 500;
@@ -266,14 +265,14 @@ body::-webkit-scrollbar {
 }
 
 .subtitle {
-  overflow-x: hidden;
+  
   font-size: calc(0.219 * var(--m));
   color: var(--white); /*rgba(255, 255, 255, 0.7)*/
   margin: 0;
 }
 /*****************************************************************************************************************************/
 .projectscontainer {
-  overflow-x: hidden;
+  
   display: flex;
   flex-wrap: wrap;
   gap: calc(0.5 * var(--m));
@@ -284,7 +283,7 @@ body::-webkit-scrollbar {
   width: fit-content;
 }
 .project {
-  overflow-x: hidden;
+  
   display: flex;
   flex-direction: column;
   width: calc(7 * var(--m));
@@ -293,24 +292,23 @@ body::-webkit-scrollbar {
   color: var(--white);
   border: calc(0.062 * var(--m)) solid var(--white);
   border-radius: calc(0.156 * var(--m)) !important;
-  padding-left: calc(0.35 * var(--m));
-  padding-right: calc(0.35 * var(--m));
+  padding: auto calc(0.35 * var(--m));
 }
 .projecttitle {
-  overflow-x: hidden;
+  
   font-size: calc(0.5 * var(--m));
   font-weight: 600;
   color: var(--white);
   margin-bottom: calc(0.25 * var(--m));
 }
 .projectdesc {
-  overflow-x: hidden;
+  
   font-size: calc((var(--m) / 2) / 2);
   color: var(--white);
   margin: 0;
 }
 .projectimg {
-  overflow-x: hidden;
+  
   padding-top: calc(0.5 * var(--m));
   width: calc(7 * var(--m));
   height: calc(4 * var(--m));
@@ -322,7 +320,7 @@ body::-webkit-scrollbar {
 
 .projectgitcontainer,
 .projectlinkcontainer {
-  overflow-x: hidden;
+  
   display: flex;
   align-items: center;
   padding: calc(0.156 * var(--m));
@@ -342,7 +340,7 @@ body::-webkit-scrollbar {
 }
 .projectgit,
 .projectlink {
-  overflow-x: hidden;
+  
   width: calc(0.5 * var(--m));
   height: calc(0.5 * var(--m));
   -webkit-user-select: none;
@@ -350,7 +348,7 @@ body::-webkit-scrollbar {
   user-select: none;
 }
 .projecticonscontainer {
-  overflow-x: hidden;
+  
   display: flex;
   justify-content: space-between;
   width: calc(2 * var(--m));
@@ -362,7 +360,7 @@ body::-webkit-scrollbar {
   margin-bottom: 0;
 }
 .projectinfocontainer {
-  overflow-x: hidden;
+  
   display: flex;
   justify-content: space-between;
   padding-bottom: 0;
