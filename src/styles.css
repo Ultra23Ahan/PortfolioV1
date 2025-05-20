@@ -116,7 +116,7 @@ body::-webkit-scrollbar {
   place-self: center;
   color: var(--white);
   font-size: calc(0.295 * var(--m));
-  margin-bottom: calc(0.313 * var(--m));
+  margin-bottom: calc(0.312 * var(--m));
   overflow-x: hidden;
 }
 .bio {
@@ -154,7 +154,7 @@ body::-webkit-scrollbar {
   color: var(--white);
   font-size: calc(0.65 * var(--m));
   font-weight: 600;
-  padding-left: calc(3 * var(--m));
+  padding-left: calc(2 * var(--m));
   width: -moz-fit-content;
   width: fit-content;
   overflow-x: hidden;
@@ -163,8 +163,8 @@ body::-webkit-scrollbar {
 .techlcontainer {
   display: flex;
   align-items: center;
-  padding-left: calc(3 * var(--m));
-  padding-right: calc(3 * var(--m));
+  padding-left: calc(2 * var(--m));
+  padding-right: calc(2 * var(--m));
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
@@ -178,7 +178,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-self: center;
   align-items: center;
-  gap: calc(0.313 * var(--m));
+  gap: calc(0.312 * var(--m));
   padding: calc(0.156 * var(--m));
   border-radius: calc(0.188 * var(--m));
   border: calc(0.0314 * var(--m)) solid #2a2a2a;
@@ -194,38 +194,51 @@ body::-webkit-scrollbar {
   border-color: #3e3e3e;
   background-color: #2a2a2a;
 }
-.card1 .logo-container {
+.card-html > .logo-container {
   background-color: rgba(233, 87, 43, var(--opacity));
 }
-.card2 .logo-container {
+.card-css > .logo-container {
   background-color: rgba(73, 148, 236, var(--opacity));
 }
-.card3 .logo-container,
-.card6 .logo-container {
+.card-frontendjs .logo-container,
+.card-backendjs > .logo-container {
   background-color: rgba(249, 223, 75, var(--opacity));
 }
-.card4 .logo-container {
+.card-git > .logo-container {
   background-color: rgba(221, 76, 58, var(--opacity));
 }
-.card5 .logo-container {
+.card-py > .logo-container {
   background: linear-gradient(
     to bottom right,
     rgba(76, 120, 166, var(--opacity)) 25%,
     rgba(250, 223, 110, var(--opacity))
   );
 }
-.card7 .logo-container {
+.card-ts > .logo-container {
   background-color: rgba(68, 118, 192, var(--opacity));
 }
-.card8 .logo-container {
+.card-supabase > .logo-container {
   background-color: rgba(108, 204, 147, var(--opacity));
 }
-.card9 .logo-container {
+.card-swift > .logo-container {
   background-color: rgba(227, 91, 58, var(--opacity));
 }
-.card10 .logo-container {
+.card-tailwind > .logo-container {
   background-color: rgba(102, 187, 242, var(--opacity));
 }
+.card-vue > .logo-container {
+  background-color: rgba(90, 255, 124, var(--opacity));
+}
+.card-svelte > .logo-container {
+  background-color: rgba(235, 80, 39, var(--opacity));
+}
+.card-nextjs > .logo-container {
+  background-color: rgba(0, 0, 0, var(--opacity));
+}
+.card-react > .logo-container {
+  background-color: rgba(130, 215, 247, var(--opacity));
+}
+
 .logo-container {
   overflow: hidden;
   padding: calc(0.188 * var(--m));
@@ -259,16 +272,18 @@ body::-webkit-scrollbar {
   margin: 0;
 }
 /*****************************************************************************************************************************/
-.pjscontainer {
+.projectscontainer {
   overflow-x: hidden;
   display: flex;
-  padding-left: calc(3 * var(--m));
+  flex-wrap: wrap;
+  gap: calc(0.5 * var(--m));
+  padding-left: calc(2 * var(--m));
   width: calc(20.95 * var(--m));
   height: 100vh;
   width: -moz-fit-content;
   width: fit-content;
 }
-.pj {
+.project {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -276,25 +291,25 @@ body::-webkit-scrollbar {
   height: calc(9 * var(--m));
   background-color: #1f1f1f;
   color: var(--white);
-  border: calc(0.063 * var(--m)) solid var(--white);
+  border: calc(0.062 * var(--m)) solid var(--white);
   border-radius: calc(0.156 * var(--m)) !important;
   padding-left: calc(0.35 * var(--m));
   padding-right: calc(0.35 * var(--m));
 }
-.pjtitle {
+.projecttitle {
   overflow-x: hidden;
   font-size: calc(0.5 * var(--m));
   font-weight: 600;
   color: var(--white);
   margin-bottom: calc(0.25 * var(--m));
 }
-.pjdesc {
+.projectdesc {
   overflow-x: hidden;
   font-size: calc((var(--m) / 2) / 2);
   color: var(--white);
   margin: 0;
 }
-.pjimg {
+.projectimg {
   overflow-x: hidden;
   padding-top: calc(0.5 * var(--m));
   width: calc(7 * var(--m));
@@ -305,8 +320,8 @@ body::-webkit-scrollbar {
   user-select: none;
 }
 
-.pjgitcontainer,
-.pjlinkcontainer {
+.projectgitcontainer,
+.projectlinkcontainer {
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -320,13 +335,13 @@ body::-webkit-scrollbar {
   user-select: none;
   transition: background-color 200ms, border-color 200ms;
 }
-.pjgitcontainer:hover,
-.pjlinkcontainer:hover {
+.projectgitcontainer:hover,
+.projectlinkcontainer:hover {
   border-color: #525252;
   background-color: #3e3e3e;
 }
-.pjgit,
-.pjlink {
+.projectgit,
+.projectlink {
   overflow-x: hidden;
   width: calc(0.5 * var(--m));
   height: calc(0.5 * var(--m));
@@ -334,23 +349,21 @@ body::-webkit-scrollbar {
   -moz-user-select: none;
   user-select: none;
 }
-.pjiconscontainer {
+.projecticonscontainer {
   overflow-x: hidden;
   display: flex;
   justify-content: space-between;
-
   width: calc(2 * var(--m));
-  margin-top: calc(0.5 * var(--m));
+  margin-top: calc(0.75 * var(--m));
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.pjinfocontainer {
+.projectinfocontainer {
   overflow-x: hidden;
   display: flex;
-
   justify-content: space-between;
   padding-bottom: 0;
   margin-top: calc(0.16525 * var(--m));
@@ -362,7 +375,7 @@ body::-webkit-scrollbar {
   gap: calc(0.05 * var(--m));
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: calc(0.391 * var(--m));
+  margin-top: calc(0.7 * var(--m));
 }
 .techstack {
   width: -moz-fit-content;
@@ -390,7 +403,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   height: 25vh;
-  padding: calc(0.313 * var(--m));
+  padding: calc(0.312 * var(--m));
   color: var(--white);
   border: #444444 solid calc(0.047 * var(--m));
   border-top-right-radius: calc(0.5 * var(--m));
@@ -429,8 +442,8 @@ body::-webkit-scrollbar {
   height: fit-content;
   padding: calc(0.156 * var(--m));
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   transition: background-color 200ms, border-color 200ms;
 }
 .gitsocialcontainer:hover,

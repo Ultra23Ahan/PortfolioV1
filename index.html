@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/styles.css" />
   <title>Ahan</title>
 </head>
 <body>
@@ -31,7 +33,7 @@
   <p class="techk">Technologies I know:</p>
   <!------------------------------------------------------------------------------------------------------>
   <div class="techkcontainer">
-    <div class="card card1">
+    <div class="card card-html">
       <div class="logo-container">
         <img class="logo" src="./assets/html.svg" />
       </div>
@@ -40,7 +42,7 @@
         <p class="subtitle">Not a &lt;div&gt; hellscape</p>
       </div>
     </div>
-    <div class="card card2">
+    <div class="card card-css">
       <div class="logo-container">
         <img class="logo" src="./assets/css.svg" />
       </div>
@@ -49,7 +51,7 @@
         <p class="subtitle">Styling for HTML</p>
       </div>
     </div>
-    <div class="card card3">
+    <div class="card card-frontendjs">
       <div class="logo-container">
         <img class="logo" src="./assets/js.svg" />
       </div>
@@ -58,7 +60,7 @@
         <p class="subtitle">Functionality for HTML + CSS</p>
       </div>
     </div>
-    <div class="card card4">
+    <div class="card card-git">
       <div class="logo-container">
         <img class="logo" src="./assets/git.svg" />
       </div>
@@ -68,56 +70,9 @@
       </div>
     </div>
     <br />
-  </div>
-  <!------------------------------------------------------------------------------------------------------>
-  <p class="techl">Technologies I am currently learning:</p>
-  <div class="techlcontainer">
-    <div class="card card5">
-      <div class="logo-container">
-        <img class="logo" src="./assets/python.svg" />
-      </div>
-      <div>
-        <h4 class="title">Python</h4>
-        <p class="subtitle">A programming language</p>
-      </div>
-    </div>
-    <div class="card card6">
-      <div class="logo-container">
-        <img class="logo" src="./assets/js.svg" />
-      </div>
-      <div>
-        <p class="title">Backend JavaScript</p>
-        <p class="subtitle">Accessing API's, DBs, etc.</p>
-      </div>
-    </div>
-    <div class="card card7">
-      <div class="logo-container">
-        <img class="logo" src="./assets/ts.svg" />
-      </div>
-      <div>
-        <h4 class="title">TypeScript</h4>
-        <p class="subtitle">JavaScript with types</p>
-      </div>
-    </div>
-    <div class="card card8">
-      <div class="logo-container">
-        <img class="logo" src="./assets/supabase.svg" />
-      </div>
-      <div>
-        <h2 class="title">Supabase</h2>
-        <p class="subtitle">Firebase Alternative</p>
-      </div>
-    </div>
-    <div class="card card9">
-      <div class="logo-container">
-        <img class="logo" src="./assets/swift.svg" />
-      </div>
-      <div>
-        <h2 class="title">Swift & Swiftui</h2>
-        <p class="subtitle">Used for making darwin apps</p>
-      </div>
-    </div>
-    <div class="card card10">
+
+    <div class="card card-tailwind">
+      <!-- card10 -->
       <div class="logo-container">
         <img class="logo" src="./assets/tailwind.svg" />
       </div>
@@ -126,28 +81,146 @@
         <p class="subtitle">CSS but better & faster</p>
       </div>
     </div>
-    
+    <div class="card card-py">
+      <!-- card5 -->
+      <div class="logo-container">
+        <img class="logo" src="./assets/python.svg" />
+      </div>
+      <div>
+        <h4 class="title">Python</h4>
+        <p class="subtitle">A programming language</p>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------>
+  <p class="techl">Technologies I am learning:</p>
+  <div class="techlcontainer">
+    <div class="card card-backendjs">
+      <!-- card6 -->
+      <div class="logo-container">
+        <img class="logo" src="./assets/js.svg" />
+      </div>
+      <div>
+        <p class="title">Backend JavaScript</p>
+        <p class="subtitle">Accessing API's, DBs, etc.</p>
+      </div>
+    </div>
+    <div class="card card-ts">
+      <!-- card7 -->
+      <div class="logo-container">
+        <img class="logo" src="./assets/ts.svg" />
+      </div>
+      <div>
+        <h4 class="title">TypeScript</h4>
+        <p class="subtitle">JavaScript with types</p>
+      </div>
+    </div>
+    <div class="card card-supabase">
+      <!-- card8 -->
+      <div class="logo-container">
+        <img class="logo" src="./assets/supabase.svg" />
+      </div>
+      <div>
+        <h2 class="title">Supabase</h2>
+        <p class="subtitle">Firebase Alternative</p>
+      </div>
+    </div>
+    <div class="card card-swift">
+      <!-- card9 -->
+      <div class="logo-container">
+        <img class="logo" src="./assets/swift.svg" />
+      </div>
+      <div>
+        <h2 class="title">Swift & Swiftui</h2>
+        <p class="subtitle">Used for making darwin apps</p>
+      </div>
+    </div>
+    <div class="card card-vue">
+      <div class="logo-container">
+        <img class="logo" src="./assets/vue.svg" />
+      </div>
+      <div>
+        <p class="title">Vue</p>
+        <p class="subtitle">A JavaScript Framework</p>
+      </div>
+    </div>
+    <div class="card card-svelte">
+      <div class="logo-container">
+        <img class="logo" src="./assets/svelte.svg" />
+      </div>
+      <div>
+        <p class="title">Svelte</p>
+        <p class="subtitle">A JavaScript Framework</p>
+      </div>
+    </div>
+    <div class="card card-nextjs">
+      <div class="logo-container">
+        <img class="logo" src="./assets/nextjs.svg" />
+      </div>
+      <div>
+        <p class="title">Next.js</p>
+        <p class="subtitle">A JavaScript Framework</p>
+      </div>
+    </div>
+    <div class="card card-react">
+      <div class="logo-container">
+        <img class="logo" src="./assets/react.svg" />
+      </div>
+      <div>
+        <p class="title">React</p>
+        <p class="subtitle">A JavaScript Framework</p>
+      </div>
+    </div>
   </div>
   <!------------------------------------------------------------------------------------------------------>
   <p class="projects">My Projects:</p>
-  <div class="pjscontainer">
-    <div class="pj">
-      <img class="pjimg" src="./assets/Kheti.png" />
-      <h3 class="pjtitle">Kheti</h3>
-      <p class="pjdesc">
+  <div class="projectscontainer">
+    <div class="project">
+      <img class="projectimg" src="./assets/Kheti.png" />
+      <h3 class="projecttitle">Kheti</h3>
+      <p class="projectdesc">
         A one stop solution for farmers that provides them with all the
         information they need such a GUI for buyers and sellers for crops, etc.
       </p>
-      <div class="pjinfocontainer">
-        <div class="pjiconscontainer">
+      <div class="projectinfocontainer">
+        <div class="projecticonscontainer">
           <a href="https://github.com/Amogh-Prabhakar/Kheti" target="_blank">
-            <div class="pjgitcontainer">
-              <img class="pjgit" src="./assets/github.svg" />
+            <div class="projectgitcontainer">
+              <img class="projectgit" src="./assets/github.svg" />
             </div>
           </a>
           <a href="https://amogh-prabhakar.github.io/Kheti/" target="_blank">
-            <div class="pjlinkcontainer">
-              <img class="pjlink" src="./assets/external-link.svg" />
+            <div class="projectlinkcontainer">
+              <img class="projectlink" src="./assets/external-link.svg" />
+            </div>
+          </a>
+        </div>
+        <div class="techstackcontainer">
+          <p class="techstack">HTML</p>
+          <p class="techstack">CSS</p>
+          <p class="techstack">JavaScript</p>
+        </div>
+      </div>
+    </div>
+    <div class="project">
+      <img class="projectimg" src="./assets/InstaMacro.png" />
+      <h3 class="projecttitle">InstaMacro</h3>
+      <p class="projectdesc">
+        A website where people can contact me
+        for making macros for them to automate
+        repetitive tasks. Aimed at coporate workers. (Business idea)
+      </p>
+      <div class="projectinfocontainer">
+        <div class="projecticonscontainer">
+          <a href="https://github.com/Amogh-Prabhakar/Kheti" target="_blank">
+            <div class="projectgitcontainer">
+              <img class="projectgit" src="./assets/github.svg" />
+            </div>
+          </a>
+          <a href="https://insta-macro.vercel.app" target="_blank">
+            <div class="projectlinkcontainer">
+              <img class="projectlink" src="./assets/external-link.svg" />
             </div>
           </a>
         </div>
